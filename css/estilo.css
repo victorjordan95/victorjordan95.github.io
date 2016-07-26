@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+html {
+  overflow-y: hidden; }
+
 #new-menu {
   position: absolute;
   width: 100%;
@@ -14,12 +17,12 @@
     font-size: 25px;
     font-weight: 300;
     color: #807F7D; }
-  #new-menu h1 a {
-    text-decoration: none;
-    color: #888888;
-    font-weight: 400; }
-  #new-menu h1 a:hover {
-    text-decoration: underline; }
+    #new-menu h1 a {
+      text-decoration: none;
+      color: #888888;
+      font-weight: 400; }
+      #new-menu h1 a:hover {
+        text-decoration: underline; }
   #new-menu .content {
     position: relative;
     top: 5px;
@@ -63,7 +66,6 @@
     font-size: 12px;
     color: #FFFFFF; }
   #new-menu .liked:hover, #new-menu .listen:hover, #new-menu .cog:hover {
-    background: RGBA(0, 0, 0, 0.29);
     color: #E7E7E8;
     cursor: pointer; }
   #new-menu .menu {
@@ -76,29 +78,29 @@
     font-family: "Lato", "FontAwesome", Helvetica;
     font-size: 15px;
     font-weight: 300; }
-  #new-menu .menu a {
-    display: block;
-    padding: 0 0 0 30px;
-    line-height: 38px;
-    color: #FFFFFF;
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none; }
-  #new-menu .menu a:after {
-    opacity: 0;
-    content: "\f0da";
-    position: absolute;
-    right: 0;
-    margin-right: 10px;
-    font-size: 14px; }
-  #new-menu .menu a:hover:after {
-    opacity: 1; }
-  #new-menu .menu a:hover {
-    background: #7EC29C;
-    color: #FFFFFF;
-    cursor: pointer; }
+    #new-menu .menu a {
+      display: block;
+      padding: 0 0 0 30px;
+      line-height: 38px;
+      color: #FFFFFF;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none; }
+      #new-menu .menu a:after {
+        opacity: 0;
+        content: "\f0da";
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        font-size: 14px; }
+      #new-menu .menu a:hover:after {
+        opacity: 1; }
+      #new-menu .menu a:hover {
+        background: #7EC29C;
+        color: #FFFFFF;
+        cursor: pointer; }
 
 .header {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   height: 300px;
   width: 100%;
   background: url("../img/bg.png") no-repeat;
@@ -134,17 +136,16 @@
   position: relative;
   top: 20%; }
 
-.header-name > h1 {
-  font-size: 2.5em;
-  color: #ffffff;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
-  margin-bottom: 0; }
-
-.header-name > h2 {
-  font-size: 1.5em;
-  color: #ffffff;
-  margin-top: 0; }
+.header-name {
+  color: #ffffff; }
+  .header-name h1 {
+    font-size: 2.5em;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 0; }
+  .header-name h2 {
+    font-size: 1.5em;
+    margin-top: 0; }
 
 section {
   font-family: 'Lato', sans-serif; }
@@ -183,6 +184,7 @@ section {
       position: relative; }
 
 .section-experience {
+  font-family: Lato, sans-serif;
   height: 100%;
   width: 100%;
   background: url("../img/bg2.png") repeat-y; }
@@ -198,12 +200,12 @@ section {
     transform: translateX(-50%);
     margin-top: 18px; }
     .section-experience .experience-work h4 {
-      font: 22px Roboto;
+      font: 22px Roboto,sans-serif;
       margin-bottom: 16px; }
     .section-experience .experience-work .experience-title {
-      font: lighter 16px Roboto; }
+      font: lighter 16px Roboto, sans-serif; }
     .section-experience .experience-work .experience-description {
-      font: 13px Lato;
+      font: 13px Lato, sans-serif;
       margin-bottom: 16px; }
 
 .section-extra {
@@ -225,7 +227,7 @@ footer {
     padding: 0 5px;
     margin: 0 auto; }
 
-/* Layout para desktops: 769 px at├⌐ o m├íximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+/* Layout para desktops: 769 px at├® o m├íximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 769px) {
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #e7e7e7;
@@ -243,7 +245,7 @@ footer {
     border-bottom: solid #5CB85C 5px; }
     .header .header-name h1 {
       font-size: 3.5em;
-      width: 28%;
+      width: 40%;
       height: 20%;
       margin: 0 auto 30px; }
     .header .header-name h2 {
