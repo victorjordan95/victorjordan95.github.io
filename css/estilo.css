@@ -1,5 +1,102 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+#new-menu {
+  position: absolute;
+  width: 100%;
+  padding: 0 5%;
+  z-index: 1;
+  /* Bar */
+  /* Menu */ }
+  #new-menu h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Lato", Helvetica;
+    font-size: 25px;
+    font-weight: 300;
+    color: #807F7D; }
+  #new-menu h1 a {
+    text-decoration: none;
+    color: #888888;
+    font-weight: 400; }
+  #new-menu h1 a:hover {
+    text-decoration: underline; }
+  #new-menu .content {
+    position: relative;
+    top: 5px;
+    width: 250px;
+    margin: 0 auto; }
+  #new-menu .mainBar {
+    background-color: RGBA(75, 75, 74, 0);
+    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.8);
+    width: 250px;
+    height: 50px;
+    font-family: "Lato", "FontAwesome", Helvetica;
+    font-size: 35px;
+    font-weight: 300; }
+  #new-menu .liked, #new-menu .listen, #new-menu .cog {
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; }
+  #new-menu .liked {
+    width: 94px; }
+  #new-menu .listen {
+    width: 99px; }
+  #new-menu .cog {
+    width: 55px; }
+  #new-menu .liked:before {
+    content: "\f00c";
+    margin-right: 5px;
+    font-size: 13px;
+    position: relative;
+    bottom: 1px;
+    color: #FFFFFF; }
+  #new-menu .listen:before {
+    content: "\f0da";
+    margin-right: 7px;
+    font-size: 14px;
+    color: #FFFFFF; }
+  #new-menu .cog:after {
+    content: "\f0d7";
+    margin-left: 10px;
+    font-size: 12px;
+    color: #FFFFFF; }
+  #new-menu .liked:hover, #new-menu .listen:hover, #new-menu .cog:hover {
+    background: RGBA(0, 0, 0, 0.29);
+    color: #E7E7E8;
+    cursor: pointer; }
+  #new-menu .menu {
+    margin-top: 4px;
+    background-color: #4DAF7C;
+    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.8);
+    width: 250px;
+    height: 152px;
+    font-family: "Lato", "FontAwesome", Helvetica;
+    font-size: 15px;
+    font-weight: 300; }
+  #new-menu .menu a {
+    display: block;
+    padding: 0 0 0 30px;
+    line-height: 38px;
+    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none; }
+  #new-menu .menu a:after {
+    opacity: 0;
+    content: "\f0da";
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    font-size: 14px; }
+  #new-menu .menu a:hover:after {
+    opacity: 1; }
+  #new-menu .menu a:hover {
+    background: #7EC29C;
+    color: #FFFFFF;
+    cursor: pointer; }
+
 .header {
   font-family: Roboto;
   height: 300px;
