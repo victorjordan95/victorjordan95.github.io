@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
-html{overflow-y: hidden;}
+body{overflow-x: hidden;}
 
 #new-menu{
 	position: absolute;
@@ -56,8 +56,6 @@ html{overflow-y: hidden;}
 	
 	.liked:before { content: "\f00c"; margin-right: 5px; font-size: 13px; position: relative; bottom: 1px; color: #FFFFFF; }
 	.listen:before { content: "\f0da"; margin-right: 7px; font-size: 14px; color: #FFFFFF; }
-	.cog:after { content: "\f0d7"; margin-left: 10px; font-size: 12px; color: #FFFFFF; }
-
 	.liked:hover, .listen:hover, .cog:hover {color: #E7E7E8; cursor: pointer; }
 
 	/* Menu */
@@ -224,10 +222,9 @@ section{
 		color: #ffffff;
 		height: 550px;
 		background-color: rgba(255,255,255, 0.4);
-	    left: 50%;
-		transform: translateX(-50%);
+	    
 		margin-top: 18px;
-		 h4 {
+		h4 {
 			font: 22px Roboto,sans-serif;
 		    margin-bottom: 16px;
 		}
@@ -236,7 +233,6 @@ section{
 		}
 
 		.experience-description {
-			font: 13px Lato, sans-serif;
 			margin-bottom: 16px;
 		}
 	}
@@ -366,10 +362,8 @@ footer {
 		    left: 0%;
    			padding-left: 5px;
 	    	transform: translateX(0%);
-	    	height: 500px;
 	    	margin-bottom: 36px;
 		    
-	
 			h4,p{
 				text-align: center;
 			}
