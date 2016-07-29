@@ -3,7 +3,7 @@ body{overflow-x: hidden;}
 
 #new-menu{
 	position: absolute;
-	width: 100%;
+	width: auto;
 	padding: 0 5%;
     z-index: 1;
 
@@ -250,6 +250,47 @@ section{
 	}
 }
 
+.section-courses {
+	height: auto;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	
+	.course {
+
+		margin-bottom: 16px;
+		.description {
+			display: inline-block;
+			max-width: 60%; 
+			float: left;
+		}
+		.image-course {
+			width: 35%;
+			float: right;
+			vertical-align: middle;
+			img {
+				display: inline-block;
+				width: 100px;
+				vertical-align: middle;
+				float:left;
+			}
+		}
+	}
+	.course {
+		.description2 {
+			max-width: 60%;
+			float: right;
+		}
+		.image-course2 {
+			width: 35%;
+			float: left;
+
+			img {
+				width: 100px;
+				float: left;
+			}
+		}
+	}
+}
 
 footer {
 	background-color: #222222;
@@ -257,7 +298,6 @@ footer {
 	text-align: center;
 	padding: 18px 0 8px 0;
 	.social {
-	    
 	    i {
 			font-size: 25px;
 		    padding: 0 5px;

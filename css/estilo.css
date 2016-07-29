@@ -5,7 +5,7 @@ body {
 
 #new-menu {
   position: absolute;
-  width: 100%;
+  width: auto;
   padding: 0 5%;
   z-index: 1;
   /* Bar */
@@ -209,6 +209,35 @@ section {
   .section-extra p {
     margin: 0; }
 
+.section-courses {
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+  .section-courses .course {
+    margin-bottom: 16px; }
+    .section-courses .course .description {
+      display: inline-block;
+      max-width: 60%;
+      float: left; }
+    .section-courses .course .image-course {
+      width: 35%;
+      float: right;
+      vertical-align: middle; }
+      .section-courses .course .image-course img {
+        display: inline-block;
+        width: 100px;
+        vertical-align: middle;
+        float: left; }
+  .section-courses .course .description2 {
+    max-width: 60%;
+    float: right; }
+  .section-courses .course .image-course2 {
+    width: 35%;
+    float: left; }
+    .section-courses .course .image-course2 img {
+      width: 100px;
+      float: left; }
+
 footer {
   background-color: #222222;
   width: 100%;
@@ -219,7 +248,7 @@ footer {
     padding: 0 5px;
     margin: 0 auto; }
 
-/* Layout para desktops: 769 px at├® o m├íximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+/* Layout para desktops: 769 px at├⌐ o m├íximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 769px) {
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #e7e7e7;
