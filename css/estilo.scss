@@ -1,4 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+
+@keyframes swing {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+}
+
+
 body{overflow-x: hidden;}
 
 #new-menu{
@@ -254,40 +262,34 @@ section{
 	height: auto;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	
-	.course {
 
-		margin-bottom: 16px;
-		.description {
-			display: inline-block;
-			max-width: 60%; 
-			float: left;
-		}
+	.course {
+		margin-bottom: 8px;
+
 		.image-course {
-			width: 35%;
-			float: right;
-			vertical-align: middle;
-			img {
-				display: inline-block;
-				width: 100px;
-				vertical-align: middle;
-				float:left;
-			}
-		}
-	}
-	.course {
-		.description2 {
-			max-width: 60%;
-			float: right;
-		}
-		.image-course2 {
-			width: 35%;
 			float: left;
+			height: 100px;
+			display: table-cell;
+    		vertical-align:middle;
 
 			img {
 				width: 100px;
-				float: left;
+				float: right;
+				&:hover{
+					transform-origin: top center;
+					animation: swing 2s infinite;
+				}
 			}
+		}
+
+		.description {
+			max-width: 60%;
+			height: 100px;
+			display: table-cell;
+    		vertical-align:middle;
+    		p {
+    			margin-left: 20px;
+    		}
 		}
 	}
 }

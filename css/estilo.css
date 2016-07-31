@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@keyframes swing {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-10deg); }
+  100% {
+    transform: rotate(0deg); } }
 body {
   overflow-x: hidden; }
 
@@ -214,29 +221,25 @@ section {
   font-family: 'Roboto', sans-serif;
   text-align: center; }
   .section-courses .course {
-    margin-bottom: 16px; }
-    .section-courses .course .description {
-      display: inline-block;
-      max-width: 60%;
-      float: left; }
+    margin-bottom: 8px; }
     .section-courses .course .image-course {
-      width: 35%;
-      float: right;
+      float: left;
+      height: 100px;
+      display: table-cell;
       vertical-align: middle; }
       .section-courses .course .image-course img {
-        display: inline-block;
         width: 100px;
-        vertical-align: middle;
-        float: left; }
-  .section-courses .course .description2 {
-    max-width: 60%;
-    float: right; }
-  .section-courses .course .image-course2 {
-    width: 35%;
-    float: left; }
-    .section-courses .course .image-course2 img {
-      width: 100px;
-      float: left; }
+        float: right; }
+        .section-courses .course .image-course img:hover {
+          transform-origin: top center;
+          animation: swing 2s infinite; }
+    .section-courses .course .description {
+      max-width: 60%;
+      height: 100px;
+      display: table-cell;
+      vertical-align: middle; }
+      .section-courses .course .description p {
+        margin-left: 20px; }
 
 footer {
   background-color: #222222;
