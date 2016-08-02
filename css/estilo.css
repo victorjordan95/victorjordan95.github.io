@@ -110,7 +110,16 @@ p, a {
   font-family: 'Roboto', sans-serif;
   height: 300px;
   width: 100%;
-  background: url("../img/bg.png") no-repeat;
+  background: #3B697D;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #3B697D, #6A6A7B);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #3B697D, #6A6A7B);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #3B697D, #6A6A7B);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #3B697D, #6A6A7B);
+  /* Standard syntax (must be last) */
   margin-bottom: 18px; }
 
 #logo {
@@ -170,27 +179,19 @@ p, a {
     background-color: #5CB85C;
     position: relative; }
 
-.section-works {
-  background-color: #EEEEEE; }
-  .section-works h2 {
-    margin-bottom: 18px; }
-  .section-works .jobs-box {
-    background-color: #3F51B5;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    margin-bottom: 8px; }
-    .section-works .jobs-box p {
-      color: #ffffff;
-      background-color: #3F51B5;
-      top: 50%;
-      transform: translateY(-50%);
-      position: relative; }
-
 .section-experience {
   height: 100%;
   width: 100%;
-  background: url("../img/bg2.png") repeat-y; }
+  background: #3B697D;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #3B697D, #6A6A7B);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #3B697D, #6A6A7B);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #3B697D, #6A6A7B);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #3B697D, #6A6A7B);
+  /* Standard syntax (must be last) */ }
   .section-experience h2 {
     color: #ffffff;
     font-weight: bold;
@@ -219,28 +220,17 @@ p, a {
 
 .section-courses {
   height: auto;
-  font-family: 'Roboto', sans-serif;
-  text-align: center; }
-  .section-courses .course {
-    margin-bottom: 8px; }
-    .section-courses .course .image-course {
-      float: left;
-      height: 100px;
-      display: table-cell;
-      vertical-align: middle; }
-      .section-courses .course .image-course img {
-        width: 100px;
-        float: right; }
-        .section-courses .course .image-course img:hover {
-          transform-origin: center center;
-          animation: swing 2s infinite; }
-    .section-courses .course .description {
-      max-width: 60%;
-      height: 100px;
-      display: table-cell;
-      vertical-align: middle; }
-      .section-courses .course .description p {
-        margin-left: 20px; }
+  text-align: center;
+  margin-top: 36px; }
+  .section-courses h2 {
+    margin-bottom: 18px; }
+  .section-courses img {
+    width: 100px; }
+    .section-courses img:hover {
+      transform-origin: center center;
+      animation: swing 2s infinite; }
+  .section-courses .thumbnail {
+    height: 280px; }
 
 footer {
   background-color: #222222;
@@ -281,26 +271,20 @@ footer {
     .section-zallium .about-button:hover {
       background-color: #55A755; }
 
-  .working-process {
-    height: 180px;
-    margin-bottom: 18px; }
-
-  .section-experience {
-    background: url("../img/bg.png") no-repeat; }
-    .section-experience hr {
-      width: 80%;
-      border-top: 2px solid rgba(238, 238, 238, 0.4); }
-    .section-experience h2 {
-      color: #ffffff;
-      font-weight: bold;
+  .section-experience hr {
+    width: 80%;
+    border-top: 2px solid rgba(238, 238, 238, 0.4); }
+  .section-experience h2 {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center; }
+  .section-experience .experience-work {
+    left: 0%;
+    padding-left: 5px;
+    transform: translateX(0%);
+    margin-bottom: 36px; }
+    .section-experience .experience-work h4, .section-experience .experience-work p {
       text-align: center; }
-    .section-experience .experience-work {
-      left: 0%;
-      padding-left: 5px;
-      transform: translateX(0%);
-      margin-bottom: 36px; }
-      .section-experience .experience-work h4, .section-experience .experience-work p {
-        text-align: center; }
 
   footer .social a {
     color: #333; }

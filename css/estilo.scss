@@ -22,12 +22,13 @@ p, a {font-family: 'Roboto', sans-serif;}
 	h1{
 		margin-top: 20px;
 		text-align: center;
-		
 		font-size: 25px;
 		font-weight: 300;
 	  	color: #807F7D;
 		a { 
-			text-decoration: none; color: #888888; font-weight: 400; 
+			text-decoration: none; 
+			color: #888888; 
+			font-weight: 400; 
 			&:hover { 
 			text-decoration: underline; 
 			}
@@ -111,7 +112,11 @@ p, a {font-family: 'Roboto', sans-serif;}
 	font-family: 'Roboto', sans-serif;
 	height: 300px;
 	width: 100%;
-	background: url('../img/bg.png') no-repeat;
+	background: #3B697D; /* For browsers that do not support gradients */   
+    background: -webkit-linear-gradient(left top, #3B697D , #6A6A7B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #3B697D , #6A6A7B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right,#3B697D , #6A6A7B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #3B697D , #6A6A7B); /* Standard syntax (must be last) */
 	margin-bottom: 18px;
 }
 
@@ -193,33 +198,16 @@ p, a {font-family: 'Roboto', sans-serif;}
 	}
 }
 
-
-.section-works {
-	background-color: #EEEEEE;
-	h2 {
-		margin-bottom: 18px;
-	}
-	.jobs-box {
-		background-color: #3F51B5; 
-		width: 100px;
-	    height: 100px;
-	    margin: auto;
-	    margin-bottom: 8px;
-	    p {
-			color: #ffffff;
-			background-color: #3F51B5; 
-		    top: 50%;
-		    transform: translateY(-50%);
-		    position: relative;
-		}
-	}
-}
-
 .section-experience {
 	
 	height: 100%;
 	width: 100%;
-	background: url('../img/bg2.png') repeat-y;
+	background: #3B697D; /* For browsers that do not support gradients */   
+    background: -webkit-linear-gradient(left top, #3B697D , #6A6A7B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #3B697D , #6A6A7B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right,#3B697D , #6A6A7B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #3B697D , #6A6A7B); /* Standard syntax (must be last) */
+
 	h2 {
 		color: #ffffff;
 		font-weight: bold;
@@ -259,39 +247,26 @@ p, a {font-family: 'Roboto', sans-serif;}
 
 .section-courses {
 	height: auto;
-	font-family: 'Roboto', sans-serif;
 	text-align: center;
-
-	.course {
-		margin-bottom: 8px;
-
-		.image-course {
-			float: left;
-			height: 100px;
-			display: table-cell;
-    		vertical-align:middle;
-
-			img {
-				width: 100px;
-				float: right;
-				&:hover{
-					transform-origin: center center;
-					animation: swing 2s infinite;
-				}
-			}
-		}
-
-		.description {
-			max-width: 60%;
-			height: 100px;
-			display: table-cell;
-    		vertical-align:middle;
-    		p {
-    			margin-left: 20px;
-    		}
-		}
+	margin-top: 36px;
+	h2 {
+		margin-bottom: 18px;
 	}
+
+	img {
+		width: 100px;
+		&:hover{
+			transform-origin: center center;
+			animation: swing 2s infinite;
+		}
+
+	}
+		.thumbnail{
+		height: 280px;
+	}
+
 }
+
 
 footer {
 	background-color: #222222;
@@ -352,12 +327,7 @@ footer {
 		}
 	}
 
-	.working-process {
-		height: 180px;
-		margin-bottom: 18px;
-	}
 	.section-experience {
-		background: url("../img/bg.png") no-repeat;
 		hr {
 			width: 80%;
 	    	border-top: 2px solid rgba(238, 238, 238, 0.4);
