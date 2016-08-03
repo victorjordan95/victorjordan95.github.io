@@ -363,6 +363,38 @@ footer {
 	}
 }
 
+.message-sent{
+	color: #ffffff;
+	background: #3B697D; /* For browsers that do not support gradients */   
+    background: -webkit-linear-gradient(left top, #3B697D , #6A6A7B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #3B697D , #6A6A7B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right,#3B697D , #6A6A7B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #3B697D , #6A6A7B); /* Standard syntax (must be last) */
+	margin-top:10%;
+	border-top: solid #55A755 5px;
+	border-bottom: solid #55A755 5px;
+	padding: 30px;
+	i {
+		font-size: 100px;
+
+	} 
+	.message-success{
+		font-size: 20px;
+	}
+	.message-soon{
+
+	}
+	a {
+		font-weight: bolder;
+		background-color: #5CB85C;
+		border-color: #5CB85C;
+		&:hover {
+			background-color: #55A755;
+			border-color: #55A755;
+		}
+	}
+
+}
 
 
 /* Layout para desktops: 769 px até o máximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */  
