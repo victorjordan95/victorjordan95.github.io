@@ -110,12 +110,12 @@ p, a {
 #new-menu-right {
   position: relative;
   float: right;
-  margin-right: 5%;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 22px;
-  padding: 0 26px; }
+  padding: 0 8px 0 0;
+  z-index: 1; }
   #new-menu-right .fa {
-    padding: 0 8px;
+    padding: 0 16px;
     color: #ffffff; }
     #new-menu-right .fa:hover {
       color: #ffffff; }
@@ -269,11 +269,23 @@ p, a {
       font-size: 16px; }
       .section-contact .contact .contact-links a {
         font-size: 30px; }
-      .section-contact .contact .contact-links .information .fa {
+      .section-contact .contact .contact-links .name {
+        font-size: 24px; }
+      .section-contact .contact .contact-links .mail, .section-contact .contact .contact-links .telephone {
+        font-size: 18px;
+        font-style: oblique; }
+      .section-contact .contact .contact-links .fa {
         padding: 0 16px; }
       .section-contact .contact .contact-links .social-links .fa {
         margin-left: 20px;
         padding: 0 9px; }
+    .section-contact .contact .contact-form button {
+      font-weight: bolder;
+      background-color: #5CB85C;
+      border-color: #5CB85C; }
+      .section-contact .contact .contact-form button:hover {
+        background-color: #55A755;
+        border-color: #55A755; }
 
 footer {
   background-color: #222222;
@@ -285,7 +297,7 @@ footer {
     padding: 0 5px;
     margin: 0 auto; }
 
-/* Layout para desktops: 769 px at├⌐ o m├íximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+/* Layout para desktops: 769 px at├® o m├íximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 769px) {
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #e7e7e7;
@@ -334,6 +346,6 @@ footer {
     footer .social a i {
       padding: 0 10px; }
       footer .social a i:hover {
-        color: #F44336; } }
+        color: #55A755; } }
 
 /*# sourceMappingURL=estilo.css.map */

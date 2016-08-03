@@ -306,22 +306,15 @@
 				<div class="row contact">
 					<h2>Stay in Touch</h2>
 					<div class="col-xs-12 col-md-6 contact-links">
-						<p class="information">
-							<i class="fa fa-user" aria-hidden="true"></i> Victor Jordan - Front-end <br>
-							<span><i class="fa fa-envelope" aria-hidden="true"></i> victorjordan95@gmail.com </span><br>
-							<span><i class="fa fa-phone" aria-hidden="true"></i> +055 12 98215-3860 </span>
-						</p>
-
-						<p class="social-links">
-							
-							</p>
-						
+						<p class="name"><i class="fa fa-user" aria-hidden="true"></i> Victor Jordan - Front-end </p>
+						<p class="mail"><i class="fa fa-envelope" aria-hidden="true"></i> victorjordan95@gmail.com  </p>
+						<p class="telephone"><i class="fa fa-phone" aria-hidden="true"></i> +055 12 98215-3860 </p>			
 					</div>
-					<div class="col-xs-12 col-md-6">
+					<div class="col-xs-12 col-md-6 contact-form">
 						<form action="https://formspree.io/victorjordan95@gmail.com" method="POST">
 							<div class="form-group">
 								<label for="inputName">Name</label>
-								<input type="email" name="name" class="form-control" id="inputName" placeholder="Your Name :D">
+								<input type="text" name="name" class="form-control" id="inputName" placeholder="Your Name :D">
 							</div>
 							<div class="form-group">
 								<label for="inputEmail">Email address</label>
@@ -332,7 +325,7 @@
 								<textarea type="text" name="text" class="form-control" id="inputText" rows="3" placeholder="Say something (I don't give up on you, promisse!)"></textarea>
 								<input type="hidden" name="_next" value="//site.io/thanks.html" />
 							</div>
-							<button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Submit</button>
+							<button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Send me the message!</button>
 						</form>
 					</div>
 				</div>
@@ -355,7 +348,7 @@
 		</main>
 		<script>
 			$( ".cog" ).on( "click", function(){
-				$( ".menu" ).stop().fadeToggle( "fast" );
+				$( ".menu" ).stop().fadeToggle( "0.5" );
 			});
 			
 			$( ".menu-link" ).on( "click", function(){

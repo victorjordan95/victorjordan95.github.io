@@ -110,12 +110,12 @@ p, a {font-family: 'Roboto', sans-serif;}
 #new-menu-right {
 	position: relative;
 	float: right;
-	margin-right: 5%;
-	margin-top: 20px;
+	margin-top: 10px;
 	font-size: 22px;
-	padding: 0 26px;
+	padding: 0 8px 0 0;
+	z-index: 1;
 	.fa {
-		padding: 0 8px;
+		padding: 0 16px;
 		color: #ffffff;
 		&:hover {
 			color : #ffffff;
@@ -288,12 +288,12 @@ p, a {font-family: 'Roboto', sans-serif;}
 			transform-origin: center center;
 			animation: swing 2s infinite;
 		}
-
 	}
+	
+
 		.thumbnail{
-		height: 280px;
-	}
-
+			height: 280px;
+		}
 }
 
 .section-contact {
@@ -305,27 +305,47 @@ p, a {font-family: 'Roboto', sans-serif;}
 			text-align: center;
 			margin-bottom: 38px;
 		}
+		.contact-links {
+			font-size: 16px;
+			a{
+				font-size: 30px;
+			}
+			
+			.name{
+				font-size: 24px;
+			}
 
-	.contact-links {
-		font-size: 16px;
-		a{
-			font-size: 30px;
-		}
-		.information{
+			.mail , .telephone{
+				font-size: 18px;
+				font-style: oblique;
+			}
+
+
 			.fa {
 				padding: 0 16px;
 			}
+			
+			.social-links {
+				.fa {
+					margin-left: 20px;
+					padding: 0 9px;
+				}
+			}
 		}
-		.social-links {
-			.fa {
-				margin-left: 20px;
-				padding: 0 9px;
+		.contact-form { 
+			button {
+				font-weight: bolder;
+				background-color: #5CB85C;
+				border-color: #5CB85C;
+				&:hover {
+					background-color: #55A755;
+					border-color: #55A755;
+				}
 			}
 		}
 	}
 
-	}
-
+	
 }
 
 
@@ -416,7 +436,7 @@ footer {
 			    i {
 				    padding: 0 10px;
 					&:hover{
-						color: #F44336;
+						color: #55A755;
 					}
 				}
 			}
