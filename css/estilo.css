@@ -83,7 +83,7 @@ p, a {
     color: #FFFFFF;
     color: rgba(255, 255, 255, 0.8);
     width: 250px;
-    height: 152px;
+    height: auto;
     font-size: 15px;
     font-weight: 300; }
     #new-menu .menu a {
@@ -266,13 +266,13 @@ p, a {
       text-align: center;
       margin-bottom: 38px; }
     .section-contact .contact .contact-links {
-      font-size: 16px; }
+      font-size: 1em; }
       .section-contact .contact .contact-links a {
         font-size: 30px; }
       .section-contact .contact .contact-links .name {
-        font-size: 24px; }
+        font-size: 1.2em; }
       .section-contact .contact .contact-links .mail, .section-contact .contact .contact-links .telephone {
-        font-size: 18px;
+        font-size: 1em;
         font-style: oblique; }
       .section-contact .contact .contact-links .fa {
         padding: 0 16px; }
@@ -340,6 +340,15 @@ footer {
     margin-bottom: 36px; }
     .section-experience .experience-work h4, .section-experience .experience-work p {
       text-align: center; }
+
+  .section-contact .contact .contact-links {
+    font-size: 1em; }
+    .section-contact .contact .contact-links a {
+      font-size: 30px; }
+    .section-contact .contact .contact-links .name {
+      font-size: 1.5em; }
+    .section-contact .contact .contact-links .mail, .section-contact .contact .contact-links .telephone {
+      font-size: 1.2em; }
 
   footer .social a {
     color: #333; }

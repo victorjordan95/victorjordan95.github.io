@@ -26,9 +26,11 @@
 			</div>
 			<div class="menu" style="display:none;">
 				<a href="#about" class="menu-link">About me!</a>
+				<a href="#skills" class="menu-link">Skills</a>
 				<a href="#experience" class="menu-link">Experience</a>
 				<a href="#language" class="menu-link">Can I understand you?</a>
-				<a href="#" class="menu-link">Unlike</a>
+				<a href="#experience" class="menu-link">Courses</a>
+				<a href="#contact" class="menu-link">Contact</a>
 			</div>
 		</div>
 
@@ -77,11 +79,11 @@
 				</div>
 			</div>
 		</section>
-
+		<a name="knowledges"></a>
 		<section class="section-knowledges">
 			<div class="container">
 				<div class="row">
-					<h2>Knowledges</h2>
+					<h2>Skills</h2>
 					<div class="col-xs-6 col-sm-2">
 						<div class="inner-content text-center">
 							<div class="c100 p90 green center">
@@ -224,7 +226,7 @@
 			<div class="container">
 				<div class="row">
 					<h2>Languages</h2>
-					<div class="col-xs-12 col-sm-4 language">
+					<div class="col-xs-6 col-sm-4 language">
 						<div class="inner-content text-center">
 							<div class="c100 p100 green center">
 								<span>100%</span>
@@ -233,7 +235,7 @@
 							<p><strong>Portuguese</strong></p>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-4 language">
+					<div class="col-xs-6 col-sm-4 language">
 						<div class="inner-content text-center">
 							<div class="c100 p90 green center">
 								<span>90%</span>
@@ -242,7 +244,16 @@
 							<p><strong>English</strong></p>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-4 language">
+					<div class="col-xs-6 col-sm-4 language">
+						<div class="inner-content text-center">
+							<div class="c100 p50 green center">
+								<span>50%</span>
+								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+							</div>
+							<p><strong>Spanish</strong></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 language">
 						<div class="inner-content text-center">
 							<div class="c100 p40 green center">
 								<span>40%</span>
@@ -251,16 +262,17 @@
 							<p><strong>French</strong></p>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</section>
-
+		<a name="courses"></a>
 		<section class="section-courses">
 			<h2>Courses</h2>
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-xs-18 col-sm-6 col-md-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="thumbnail">
 							<img src="img/codeschool/front-end.png" alt="">
 							<div class="caption">
@@ -269,7 +281,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-18 col-sm-6 col-md-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="thumbnail">
 							<img src="img/codeschool/journey-mobile.png" alt="">
 							<div class="caption">
@@ -278,7 +290,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-18 col-sm-6 col-md-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="thumbnail">
 							<img src="img/codeschool/animation.png" alt="">
 							<div class="caption">
@@ -287,7 +299,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-18 col-sm-6 col-md-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 						<div class="thumbnail">
 							<img src="img/codeschool/svg.png" alt="">
 							<div class="caption">
@@ -301,6 +313,7 @@
 				</div>
 		</section>
 		<hr>
+		<a name="contact"></a>
 		<section class="section-contact">
 			<div class="container">
 				<div class="row contact">
@@ -323,7 +336,7 @@
 							<div class="form-group">
 								<label for="inputText">Message</label>
 								<textarea type="text" name="text" class="form-control" id="inputText" rows="3" placeholder="Say something (I don't give up on you, promisse!)"></textarea>
-								<input type="hidden" name="_next" value="//site.io/thanks.html" />
+								<!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
 							</div>
 							<button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Send me the message!</button>
 						</form>
@@ -354,7 +367,7 @@
 			$( ".menu-link" ).on( "click", function(){
 				$( ".menu" ).stop().fadeOut( "fast" );
 			});
-			$( "header" ).on( "click", function(){
+			$( "header, .section-zallium" ).on( "click", function(){
 				$( ".menu" ).fadeOut( "fast" );
 			});
 			
