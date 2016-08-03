@@ -13,7 +13,8 @@ body {
   overflow-x: hidden; }
 
 h1, h2 {
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold; }
 
 p, a {
   font-family: 'Roboto', sans-serif; }
@@ -106,9 +107,22 @@ p, a {
         color: #FFFFFF;
         cursor: pointer; }
 
+#new-menu-right {
+  position: relative;
+  float: right;
+  margin-right: 5%;
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 0 26px; }
+  #new-menu-right .fa {
+    padding: 0 8px;
+    color: #ffffff; }
+    #new-menu-right .fa:hover {
+      color: #ffffff; }
+
 .header {
   font-family: 'Roboto', sans-serif;
-  height: 300px;
+  height: 200px;
   width: 100%;
   background: #3B697D;
   /* For browsers that do not support gradients */
@@ -179,6 +193,13 @@ p, a {
     background-color: #5CB85C;
     position: relative; }
 
+.section-knowledges {
+  background-color: #E0E0E0;
+  color: #596A7C;
+  text-align: center; }
+  .section-knowledges h2 {
+    padding: 16px 0; }
+
 .section-experience {
   height: 100%;
   width: 100%;
@@ -198,11 +219,11 @@ p, a {
     text-align: center; }
   .section-experience .experience-work {
     color: #ffffff;
-    height: 550px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.4);
     margin-top: 18px; }
     .section-experience .experience-work h4 {
-      font: 22px Roboto,sans-serif;
+      font: 22px;
       margin-bottom: 16px; }
     .section-experience .experience-work .experience-title {
       font: lighter 16px Roboto, sans-serif; }
@@ -212,18 +233,22 @@ p, a {
 .section-extra {
   background-color: #E0E0E0;
   color: #596A7C;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 16px; }
   .section-extra h2 {
     padding: 16px 0; }
   .section-extra p {
     margin: 0; }
+  .section-extra .language {
+    margin-bottom: 36px; }
 
 .section-courses {
   height: auto;
   text-align: center;
   margin-top: 36px; }
   .section-courses h2 {
-    margin-bottom: 18px; }
+    margin-bottom: 18px;
+    color: #596a7c; }
   .section-courses img {
     width: 100px; }
     .section-courses img:hover {
@@ -231,6 +256,24 @@ p, a {
       animation: swing 2s infinite; }
   .section-courses .thumbnail {
     height: 280px; }
+
+.section-contact {
+  background-color: #93a5b0;
+  color: #596a7c; }
+  .section-contact .contact {
+    margin-bottom: 38px; }
+    .section-contact .contact h2 {
+      text-align: center;
+      margin-bottom: 38px; }
+    .section-contact .contact .contact-links {
+      font-size: 16px; }
+      .section-contact .contact .contact-links a {
+        font-size: 30px; }
+      .section-contact .contact .contact-links .information .fa {
+        padding: 0 16px; }
+      .section-contact .contact .contact-links .social-links .fa {
+        margin-left: 20px;
+        padding: 0 9px; }
 
 footer {
   background-color: #222222;
@@ -255,7 +298,7 @@ footer {
     color: #5CB85C; }
 
   .header {
-    height: 400px;
+    height: 300px;
     margin-bottom: 36px;
     border-bottom: solid #5CB85C 5px; }
     .header .header-name h1 {

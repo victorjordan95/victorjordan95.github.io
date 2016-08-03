@@ -9,7 +9,7 @@
 
 
 body{overflow-x: hidden;}
-h1, h2{font-family: 'Roboto Slab', serif;}
+h1, h2{font-family: 'Roboto Slab', serif; font-weight: bold;}
 p, a {font-family: 'Roboto', sans-serif;}
 
 #new-menu{
@@ -17,7 +17,6 @@ p, a {font-family: 'Roboto', sans-serif;}
 	width: auto;
 	padding: 0 5%;
     z-index: 1;
-
 
 	h1{
 		margin-top: 20px;
@@ -107,10 +106,26 @@ p, a {font-family: 'Roboto', sans-serif;}
 		}
 	}
 }
+
+#new-menu-right {
+	position: relative;
+	float: right;
+	margin-right: 5%;
+	margin-top: 20px;
+	font-size: 22px;
+	padding: 0 26px;
+	.fa {
+		padding: 0 8px;
+		color: #ffffff;
+		&:hover {
+			color : #ffffff;
+		}
+	}
+}
 	
 .header {
 	font-family: 'Roboto', sans-serif;
-	height: 300px;
+	height: 200px;
 	width: 100%;
 	background: #3B697D; /* For browsers that do not support gradients */   
     background: -webkit-linear-gradient(left top, #3B697D , #6A6A7B); /* For Safari 5.1 to 6.0 */
@@ -173,7 +188,6 @@ p, a {font-family: 'Roboto', sans-serif;}
 
 }
 
-
 .section-zallium {
 	img {
 		padding: 10px;
@@ -198,8 +212,18 @@ p, a {font-family: 'Roboto', sans-serif;}
 	}
 }
 
-.section-experience {
+.section-knowledges{
+	background-color: #E0E0E0;
+	color: #596A7C;
+	text-align: center;
 	
+	 h2 {
+		padding: 16px 0;
+	}
+}
+
+
+.section-experience {
 	height: 100%;
 	width: 100%;
 	background: #3B697D; /* For browsers that do not support gradients */   
@@ -215,12 +239,11 @@ p, a {font-family: 'Roboto', sans-serif;}
 	}
 	.experience-work {
 		color: #ffffff;
-		height: 550px;
+		height: auto;
 		background-color: rgba(255,255,255, 0.4);
-	    
 		margin-top: 18px;
 		h4 {
-			font: 22px Roboto,sans-serif;
+			font: 22px;
 		    margin-bottom: 16px;
 		}
 		.experience-title {
@@ -237,11 +260,15 @@ p, a {font-family: 'Roboto', sans-serif;}
 	background-color: #E0E0E0;
 	color: #596A7C;
 	text-align: center;
-	 h2 {
+	margin-bottom: 16px;
+	h2 {
 		padding: 16px 0;
 	}
-	 p {
+	p {
 		margin: 0;
+	}
+	.language{
+		margin-bottom: 36px;
 	}
 }
 
@@ -249,8 +276,10 @@ p, a {font-family: 'Roboto', sans-serif;}
 	height: auto;
 	text-align: center;
 	margin-top: 36px;
+
 	h2 {
 		margin-bottom: 18px;
+		color: #596a7c;
 	}
 
 	img {
@@ -263,6 +292,38 @@ p, a {font-family: 'Roboto', sans-serif;}
 	}
 		.thumbnail{
 		height: 280px;
+	}
+
+}
+
+.section-contact {
+	background-color: #93a5b0;
+	color: #596a7c;
+	.contact{
+		margin-bottom: 38px;
+		h2 {
+			text-align: center;
+			margin-bottom: 38px;
+		}
+
+	.contact-links {
+		font-size: 16px;
+		a{
+			font-size: 30px;
+		}
+		.information{
+			.fa {
+				padding: 0 16px;
+			}
+		}
+		.social-links {
+			.fa {
+				margin-left: 20px;
+				padding: 0 9px;
+			}
+		}
+	}
+
 	}
 
 }
@@ -302,7 +363,7 @@ footer {
 	}
 
 	.header {
-		height: 400px;
+		height: 300px;
 		margin-bottom: 36px;
 		border-bottom: solid #5CB85C 5px;
 		.header-name {
