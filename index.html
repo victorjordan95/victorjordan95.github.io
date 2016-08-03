@@ -327,16 +327,16 @@
 						<form action="https://formspree.io/victorjordan95@gmail.com" method="POST">
 							<div class="form-group">
 								<label for="inputName">Name</label>
-								<input type="text" name="name" class="form-control" id="inputName" placeholder="Your Name :D">
+								<input type="text" name="name" class="form-control" id="inputName" required placeholder="Your Name :D">
 							</div>
 							<div class="form-group">
 								<label for="inputEmail">Email address</label>
-								<input type="email" name="_replyto" class="form-control" id="inputEmail" placeholder="Your E-mail">
+								<input type="email" name="_replyto" class="form-control" id="inputEmail" required placeholder="Your E-mail">
 							</div>
 							<div class="form-group">
 								<label for="inputText">Message</label>
-								<textarea type="text" name="text" class="form-control" id="inputText" rows="3" placeholder="Say something (I don't give up on you, promisse!)"></textarea>
-								<!-- <input type="hidden" name="_next" value="//victorjordan95.io/thanks.html" /> -->
+								<textarea type="text" name="text" class="form-control" id="inputText" required rows="3" placeholder="Say something (I don't give up on you, promisse!)"></textarea>
+								<input type="hidden" name="_next" value="//victorjordan95.io/thanks.html" />
 							</div>
 							<button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Send me the message!</button>
 						</form>
