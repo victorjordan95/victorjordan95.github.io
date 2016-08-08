@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		
 		<title>Victor Jordan - Front-end</title>
 		
@@ -84,25 +84,7 @@
 					<h2>Skills</h2>
 					<div class="col-xs-6 col-sm-2">
 						<div class="inner-content text-center">
-							<div class="c100 p90 green center">
-								<span>90%</span>
-								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
-							</div>
-							<p><strong>HTML & CSS</strong></p>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-2">
-						<div class="inner-content text-center">
-							<div class="c100 p60 green center">
-								<span>60%</span>
-								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
-							</div>
-							<p><strong>JavaScript</strong></p>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-2">
-						<div class="inner-content text-center">
-							<div class="c100 p40 green center">
+							<div class="c100 p40 blue center">
 								<span>40%</span>
 								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 							</div>
@@ -111,7 +93,7 @@
 					</div>
 					<div class="col-xs-6 col-sm-2">
 						<div class="inner-content text-center">
-							<div class="c100 p60 green center">
+							<div class="c100 p60 blue center">
 								<span>60%</span>
 								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 							</div>
@@ -120,7 +102,25 @@
 					</div>
 					<div class="col-xs-6 col-sm-2">
 						<div class="inner-content text-center">
-							<div class="c100 p50 green center">
+							<div class="c100 p90 blue center">
+								<span>90%</span>
+								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+							</div>
+							<p><strong>HTML & CSS</strong></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<div class="inner-content text-center">
+							<div class="c100 p60 blue center">
+								<span>60%</span>
+								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+							</div>
+							<p><strong>JavaScript</strong></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2">
+						<div class="inner-content text-center">
+							<div class="c100 p50 blue center">
 								<span>50%</span>
 								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 							</div>
@@ -129,7 +129,7 @@
 					</div>
 					<div class="col-xs-6 col-sm-2">
 						<div class="inner-content text-center">
-							<div class="c100 p50 green center">
+							<div class="c100 p50 blue center">
 								<span>50%</span>
 								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 							</div>
@@ -226,25 +226,7 @@
 					<h2>Languages</h2>
 					<div class="col-xs-6 col-sm-3 language">
 						<div class="inner-content text-center">
-							<div class="c100 p100 green center">
-								<span>100%</span>
-								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
-							</div>
-							<p><strong>Portuguese</strong></p>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-3 language">
-						<div class="inner-content text-center">
-							<div class="c100 p90 green center">
-								<span>90%</span>
-								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
-							</div>
-							<p><strong>English</strong></p>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-3 language">
-						<div class="inner-content text-center">
-							<div class="c100 p50 green center">
+							<div class="c100 p50 blue center">
 								<span>50%</span>
 								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 							</div>
@@ -253,7 +235,25 @@
 					</div>
 					<div class="col-xs-6 col-sm-3 language">
 						<div class="inner-content text-center">
-							<div class="c100 p40 green center">
+							<div class="c100 p100 blue center">
+								<span>100%</span>
+								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+							</div>
+							<p><strong>Portuguese</strong></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 language">
+						<div class="inner-content text-center">
+							<div class="c100 p90 blue center">
+								<span>90%</span>
+								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
+							</div>
+							<p><strong>English</strong></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 language">
+						<div class="inner-content text-center">
+							<div class="c100 p40 blue center">
 								<span>40%</span>
 								<div class="slice"><div class="bar"></div><div class="fill"></div></div>
 							</div>
@@ -367,6 +367,32 @@
 			});
 			$( "header, .section-zallium" ).on( "click", function(){
 				$( ".menu" ).fadeOut( "fast" );
+			});
+
+			$(document).ready(function () {
+			    function filterPath(string) {
+			        return string
+			            .replace(/^\//, '')
+			            .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+			            .replace(/\/$/, '');
+			    }
+			    $('a[href*=#]').each(function () {
+			        if (filterPath(location.pathname) == filterPath(this.pathname)
+			                && location.hostname == this.hostname
+			                && this.hash.replace(/#/, '')) {
+			            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+			            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+			            if ($target) {
+			                var targetOffset = $target.offset().top;
+			                $(this).click(function () {
+			                    if($(window).width() > 200){
+			                        $('html, body').animate({scrollTop: targetOffset}, 800);
+			                        return false;
+			                    }
+			                });
+			            }
+			        }
+			    });
 			});
 			
 		</script>

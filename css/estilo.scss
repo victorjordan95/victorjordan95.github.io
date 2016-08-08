@@ -7,6 +7,11 @@
 	100% {transform: rotate(0deg);}
 }
 
+$color-one: #235E6F; //cor da linha do header
+$color-hover: #2c4248;
+
+$background-color: #25373C; // bg header
+$bg-sections: #eaeaea; // bg sections secundarios
 
 body{overflow-x: hidden;}
 h1, h2{font-family: 'Roboto Slab', serif; font-weight: bold;}
@@ -29,7 +34,8 @@ p, a {font-family: 'Roboto', sans-serif;}
 			color: #888888; 
 			font-weight: 400; 
 			&:hover { 
-			text-decoration: underline; 
+			text-decoration: underline;
+			background-color:  $background-color;
 			}
 		}
 	}
@@ -73,14 +79,14 @@ p, a {font-family: 'Roboto', sans-serif;}
 
 	.menu {
 		margin-top: 4px;
-		background-color: #4DAF7C;
+		background-color: $color-one;
 		color: #FFFFFF;
 		color: rgba( 255, 255, 255, 0.8 );
 		width: 250px;
 		height: auto;
 		
 		font-size: 15px;
-		font-weight: 300;
+		font-weight: bolder;
 		
 		a {
 			display: block;
@@ -91,7 +97,6 @@ p, a {font-family: 'Roboto', sans-serif;}
 			text-decoration: none;
 			&:after{
 				opacity: 0;
-				content: "\f0da";
 				position: absolute;
 				right: 0;
 				margin-right: 10px;
@@ -99,7 +104,7 @@ p, a {font-family: 'Roboto', sans-serif;}
 			}
 			&:hover:after { opacity: 1; }
 			&:hover{
-				background: #7EC29C;
+				background: $color-hover;
 				color: #FFFFFF;
 				cursor: pointer;
 			}
@@ -118,27 +123,18 @@ p, a {font-family: 'Roboto', sans-serif;}
 		padding: 0 16px;
 		color: #ffffff;
 		&:hover {
-			color : #ffffff;
+			color : $color-hover;
 		}
 	}
 }
 	
 .header {
 	font-family: 'Roboto', sans-serif;
-	height: 200px;
+	height: auto;
 	width: 100%;
-	background: #3B697D; /* For browsers that do not support gradients */   
-    background: -webkit-linear-gradient(left top, #3B697D , #6A6A7B); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #3B697D , #6A6A7B); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right,#3B697D , #6A6A7B); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #3B697D , #6A6A7B); /* Standard syntax (must be last) */
+	background: $background-color;
+	border-bottom: solid $color-one 5px;
 	margin-bottom: 18px;
-}
-
-#logo{
-    color: #FFFFFF;
-    background-color: transparent;
-    font-size: 2em;
 }
 
 .navbar {
@@ -200,21 +196,21 @@ p, a {font-family: 'Roboto', sans-serif;}
 		p:first-child {
 			font-size: 1.5em;
 			b {
-				color: #5CB85C;
+				color: $color-one;
 			}
 		}
 		.about-button {
 			color: #ffffff;
 			font-weight: bold;
-			background-color: #5CB85C;
+			background-color: $color-one;
 			position: relative;
 		}
 	}
 }
 
 .section-knowledges{
-	background-color: #E0E0E0;
-	color: #596A7C;
+	background-color: $bg-sections;
+	color: $color-one;
 	text-align: center;
 	
 	 h2 {
@@ -224,21 +220,17 @@ p, a {font-family: 'Roboto', sans-serif;}
 
 
 .section-experience {
-	height: 100%;
+	height: auto;
 	width: 100%;
-	background: #3B697D; /* For browsers that do not support gradients */   
-    background: -webkit-linear-gradient(left top, #3B697D , #6A6A7B); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #3B697D , #6A6A7B); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right,#3B697D , #6A6A7B); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #3B697D , #6A6A7B); /* Standard syntax (must be last) */
+	background: $background-color;
 
 	h2 {
-		color: #ffffff;
+		color: $bg-sections;
 		font-weight: bold;
 		text-align: center;
 	}
 	.experience-work {
-		color: #ffffff;
+		color: $bg-sections;
 		height: auto;
 		background-color: rgba(255,255,255, 0.4);
 		margin-top: 18px;
@@ -247,7 +239,7 @@ p, a {font-family: 'Roboto', sans-serif;}
 		    margin-bottom: 16px;
 		}
 		.experience-title {
-			font: lighter 16px Roboto, sans-serif;	
+			font: lighter 16px 'Roboto', sans-serif;	
 		}
 
 		.experience-description {
@@ -257,8 +249,8 @@ p, a {font-family: 'Roboto', sans-serif;}
 }
 
 .section-extra {
-	background-color: #E0E0E0;
-	color: #596A7C;
+	background-color: $bg-sections;
+	color: $color-one;
 	text-align: center;
 	margin-bottom: 16px;
 	h2 {
@@ -289,16 +281,14 @@ p, a {font-family: 'Roboto', sans-serif;}
 			animation: swing 2s infinite;
 		}
 	}
-	
-
-		.thumbnail{
+	.thumbnail{
 			height: 280px;
-		}
+	}
 }
 
 .section-contact {
-	background-color: #93a5b0;
-	color: #596a7c;
+	background-color: $bg-sections;
+	color: $color-hover;
 	.contact{
 		margin-bottom: 38px;
 		h2 {
@@ -335,11 +325,11 @@ p, a {font-family: 'Roboto', sans-serif;}
 		.contact-form { 
 			button {
 				font-weight: bolder;
-				background-color: #5CB85C;
-				border-color: #5CB85C;
+				background-color: $color-one;
+				background-color: $color-one;
 				&:hover {
-					background-color: #55A755;
-					border-color: #55A755;
+					background-color: $color-hover;
+					border-color: $color-hover;
 				}
 			}
 		}
@@ -348,10 +338,8 @@ p, a {font-family: 'Roboto', sans-serif;}
 	
 }
 
-
 footer {
 	background-color: #222222;
-	width: 100%;
 	text-align: center;
 	padding: 18px 0 8px 0;
 	.social {
@@ -365,32 +353,24 @@ footer {
 
 .message-sent{
 	color: #ffffff;
-	background: #3B697D; /* For browsers that do not support gradients */   
-    background: -webkit-linear-gradient(left top, #3B697D , #6A6A7B); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #3B697D , #6A6A7B); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right,#3B697D , #6A6A7B); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #3B697D , #6A6A7B); /* Standard syntax (must be last) */
+	background: $background-color; 
 	margin-top:10%;
-	border-top: solid #55A755 5px;
-	border-bottom: solid #55A755 5px;
+	border-top: solid $color-one 5px;
+	border-bottom: solid $color-one 5px;
 	padding: 30px;
 	i {
 		font-size: 100px;
-
 	} 
 	.message-success{
 		font-size: 20px;
 	}
-	.message-soon{
-
-	}
 	a {
 		font-weight: bolder;
-		background-color: #5CB85C;
-		border-color: #5CB85C;
+		background-color: $color-one;
+		border-color: $color-one;
 		&:hover {
-			background-color: #55A755;
-			border-color: #55A755;
+			background-color: $color-hover;
+			border-color: $color-hover;
 		}
 	}
 
@@ -415,9 +395,8 @@ footer {
 	}
 
 	.header {
-		height: 300px;
+		height: auto;
 		margin-bottom: 36px;
-		border-bottom: solid #5CB85C 5px;
 		.header-name {
 			h1 {
 			    font-size: 3.5em;
@@ -435,7 +414,7 @@ footer {
 		margin-bottom: 36px;
 		.about-button {
 			&:hover {
-				background-color: #55A755;
+				background-color: $color-hover;
 			}
 		}
 	}
@@ -488,7 +467,7 @@ footer {
 			    i {
 				    padding: 0 10px;
 					&:hover{
-						color: #55A755;
+						color: $color-one;
 					}
 				}
 			}

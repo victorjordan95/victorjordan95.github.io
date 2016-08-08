@@ -37,7 +37,8 @@ p, a {
       color: #888888;
       font-weight: 400; }
       #new-menu h1 a:hover {
-        text-decoration: underline; }
+        text-decoration: underline;
+        background-color: #25373C; }
   #new-menu .content {
     position: relative;
     top: 5px;
@@ -79,13 +80,13 @@ p, a {
     cursor: pointer; }
   #new-menu .menu {
     margin-top: 4px;
-    background-color: #4DAF7C;
+    background-color: #235E6F;
     color: #FFFFFF;
     color: rgba(255, 255, 255, 0.8);
     width: 250px;
     height: auto;
     font-size: 15px;
-    font-weight: 300; }
+    font-weight: bolder; }
     #new-menu .menu a {
       display: block;
       padding: 0 0 0 30px;
@@ -95,7 +96,6 @@ p, a {
       text-decoration: none; }
       #new-menu .menu a:after {
         opacity: 0;
-        content: "\f0da";
         position: absolute;
         right: 0;
         margin-right: 10px;
@@ -103,7 +103,7 @@ p, a {
       #new-menu .menu a:hover:after {
         opacity: 1; }
       #new-menu .menu a:hover {
-        background: #7EC29C;
+        background: #2c4248;
         color: #FFFFFF;
         cursor: pointer; }
 
@@ -118,28 +118,15 @@ p, a {
     padding: 0 16px;
     color: #ffffff; }
     #new-menu-right .fa:hover {
-      color: #ffffff; }
+      color: #2c4248; }
 
 .header {
   font-family: 'Roboto', sans-serif;
-  height: 200px;
+  height: auto;
   width: 100%;
-  background: #3B697D;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #3B697D, #6A6A7B);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #3B697D, #6A6A7B);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #3B697D, #6A6A7B);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #3B697D, #6A6A7B);
-  /* Standard syntax (must be last) */
+  background: #25373C;
+  border-bottom: solid #235E6F 5px;
   margin-bottom: 18px; }
-
-#logo {
-  color: #FFFFFF;
-  background-color: transparent;
-  font-size: 2em; }
 
 .navbar {
   background-color: rgba(248, 248, 248, 0);
@@ -186,39 +173,30 @@ p, a {
   .section-zallium .section-about p:first-child {
     font-size: 1.5em; }
     .section-zallium .section-about p:first-child b {
-      color: #5CB85C; }
+      color: #235E6F; }
   .section-zallium .section-about .about-button {
     color: #ffffff;
     font-weight: bold;
-    background-color: #5CB85C;
+    background-color: #235E6F;
     position: relative; }
 
 .section-knowledges {
-  background-color: #E0E0E0;
-  color: #596A7C;
+  background-color: #eaeaea;
+  color: #235E6F;
   text-align: center; }
   .section-knowledges h2 {
     padding: 16px 0; }
 
 .section-experience {
-  height: 100%;
+  height: auto;
   width: 100%;
-  background: #3B697D;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #3B697D, #6A6A7B);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #3B697D, #6A6A7B);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #3B697D, #6A6A7B);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #3B697D, #6A6A7B);
-  /* Standard syntax (must be last) */ }
+  background: #25373C; }
   .section-experience h2 {
-    color: #ffffff;
+    color: #eaeaea;
     font-weight: bold;
     text-align: center; }
   .section-experience .experience-work {
-    color: #ffffff;
+    color: #eaeaea;
     height: auto;
     background-color: rgba(255, 255, 255, 0.4);
     margin-top: 18px; }
@@ -226,13 +204,13 @@ p, a {
       font: 22px;
       margin-bottom: 16px; }
     .section-experience .experience-work .experience-title {
-      font: lighter 16px Roboto, sans-serif; }
+      font: lighter 16px 'Roboto', sans-serif; }
     .section-experience .experience-work .experience-description {
       margin-bottom: 16px; }
 
 .section-extra {
-  background-color: #E0E0E0;
-  color: #596A7C;
+  background-color: #eaeaea;
+  color: #235E6F;
   text-align: center;
   margin-bottom: 16px; }
   .section-extra h2 {
@@ -258,8 +236,8 @@ p, a {
     height: 280px; }
 
 .section-contact {
-  background-color: #93a5b0;
-  color: #596a7c; }
+  background-color: #eaeaea;
+  color: #2c4248; }
   .section-contact .contact {
     margin-bottom: 38px; }
     .section-contact .contact h2 {
@@ -281,15 +259,14 @@ p, a {
         padding: 0 9px; }
     .section-contact .contact .contact-form button {
       font-weight: bolder;
-      background-color: #5CB85C;
-      border-color: #5CB85C; }
+      background-color: #235E6F;
+      background-color: #235E6F; }
       .section-contact .contact .contact-form button:hover {
-        background-color: #55A755;
-        border-color: #55A755; }
+        background-color: #2c4248;
+        border-color: #2c4248; }
 
 footer {
   background-color: #222222;
-  width: 100%;
   text-align: center;
   padding: 18px 0 8px 0; }
   footer .social i {
@@ -299,19 +276,10 @@ footer {
 
 .message-sent {
   color: #ffffff;
-  background: #3B697D;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #3B697D, #6A6A7B);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #3B697D, #6A6A7B);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #3B697D, #6A6A7B);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #3B697D, #6A6A7B);
-  /* Standard syntax (must be last) */
+  background: #25373C;
   margin-top: 10%;
-  border-top: solid #55A755 5px;
-  border-bottom: solid #55A755 5px;
+  border-top: solid #235E6F 5px;
+  border-bottom: solid #235E6F 5px;
   padding: 30px; }
   .message-sent i {
     font-size: 100px; }
@@ -319,11 +287,11 @@ footer {
     font-size: 20px; }
   .message-sent a {
     font-weight: bolder;
-    background-color: #5CB85C;
-    border-color: #5CB85C; }
+    background-color: #235E6F;
+    border-color: #235E6F; }
     .message-sent a:hover {
-      background-color: #55A755;
-      border-color: #55A755; }
+      background-color: #2c4248;
+      border-color: #2c4248; }
 
 /* Layout para desktops: 769 px at├⌐ o m├íximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 769px) {
@@ -338,9 +306,8 @@ footer {
     color: #5CB85C; }
 
   .header {
-    height: 300px;
-    margin-bottom: 36px;
-    border-bottom: solid #5CB85C 5px; }
+    height: auto;
+    margin-bottom: 36px; }
     .header .header-name h1 {
       font-size: 3.5em;
       width: 40%;
@@ -352,7 +319,7 @@ footer {
   .section-zallium {
     margin-bottom: 36px; }
     .section-zallium .about-button:hover {
-      background-color: #55A755; }
+      background-color: #2c4248; }
 
   .section-experience hr {
     width: 80%;
@@ -383,6 +350,6 @@ footer {
     footer .social a i {
       padding: 0 10px; }
       footer .social a i:hover {
-        color: #55A755; } }
+        color: #235E6F; } }
 
 /*# sourceMappingURL=estilo.css.map */
