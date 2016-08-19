@@ -339,8 +339,12 @@ p, a {font-family: 'Roboto', sans-serif;}
 }
 
 footer {
+	.row{
+		margin-right: 0;
+	}
 	background-color: #222222;
 	text-align: center;
+	padding-top: 20px;
 	.social {
 	    i {
 			font-size: 25px;

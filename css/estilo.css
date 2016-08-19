@@ -267,7 +267,10 @@ p, a {
 
 footer {
   background-color: #222222;
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px; }
+  footer .row {
+    margin-right: 0; }
   footer .social i {
     font-size: 25px;
     padding: 0 25px;
