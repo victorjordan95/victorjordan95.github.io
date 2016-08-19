@@ -347,58 +347,23 @@
 			<div class="containter">
 				<div class="row">
 					<div class="col-xs-12 footer">
-						<a href="https://www.facebook.com/victorjordan95"><p class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="https://github.com/victorjordan95"><i class="fa fa-github" aria-hidden="true"></i></a>
-						<a href="https://br.linkedin.com/in/victorjordan95"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-						<a href="https://www.behance.net/victorjordan95"><i class="fa fa-behance" aria-hidden="true"></i></a>
+						<p class="social">
+							<a href="https://www.facebook.com/victorjordan95"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="https://github.com/victorjordan95"><i class="fa fa-github" aria-hidden="true"></i></a>
+							<a href="https://br.linkedin.com/in/victorjordan95"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+							<a href="https://www.behance.net/victorjordan95"><i class="fa fa-behance" aria-hidden="true"></i></a>
+						</p>
 						<p>Developed by Victor Jordan</p>
 					</div>
 				</div>
 			</div>
 		</footer>
 		</main>
-		<script>
-			$( ".cog" ).on( "click", function(){
-				$( ".menu" ).stop().fadeToggle( "0.5" );
-			});
-			
-			$( ".menu-link" ).on( "click", function(){
-				$( ".menu" ).stop().fadeOut( "fast" );
-			});
-			$( "header, .section-zallium" ).on( "click", function(){
-				$( ".menu" ).fadeOut( "fast" );
-			});
-
-			$(document).ready(function () {
-			    function filterPath(string) {
-			        return string
-			            .replace(/^\//, '')
-			            .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
-			            .replace(/\/$/, '');
-			    }
-			    $('a[href*=#]').each(function () {
-			        if (filterPath(location.pathname) == filterPath(this.pathname)
-			                && location.hostname == this.hostname
-			                && this.hash.replace(/#/, '')) {
-			            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
-			            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-			            if ($target) {
-			                var targetOffset = $target.offset().top;
-			                $(this).click(function () {
-			                    if($(window).width() > 200){
-			                        $('html, body').animate({scrollTop: targetOffset}, 800);
-			                        return false;
-			                    }
-			                });
-			            }
-			        }
-			    });
-			});
-			
-		</script>
+		
+		<script src="js/js.js" async></script>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" async></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js" async></script>
 	</body>
 </html>
