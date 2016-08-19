@@ -271,8 +271,10 @@ footer {
   padding: 18px 0 8px 0; }
   footer .social i {
     font-size: 25px;
-    padding: 0 5px;
+    padding: 0 25px;
     margin: 0 auto; }
+  footer p.developed {
+    width: 99%; }
 
 .message-sent {
   color: #ffffff;
