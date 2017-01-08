@@ -21,7 +21,7 @@ $background-color: #25373C; // bg header
 $bg-sections: #eaeaea; // bg sections secundarios
 
 body{overflow-x: hidden;}
-h1, h2{font-family: 'Roboto Slab', serif; font-weight: bold;}
+h1, h2{font-family: 'Lobster', serif; font-weight: bold;}
 p, a {font-family: 'Roboto', sans-serif;}
 
 #new-menu{
@@ -221,8 +221,20 @@ p, a {font-family: 'Roboto', sans-serif;}
 	text-align: center;
 	
 	 h2 {
-		padding: 16px 0;
+		padding: 8px 0;
 	}
+    
+    h3 {
+        padding: 0 0 8px 16px;
+    }
+    
+    .maestry {
+        padding: 0 0 16px 0;
+        img {
+            width: 50px;
+        }
+    }
+    
 }
 
 
@@ -270,6 +282,8 @@ p, a {font-family: 'Roboto', sans-serif;}
 		margin-bottom: 36px;
 	}
 }
+
+@import "works";
 
 .section-courses {
 	height: auto;
@@ -352,7 +366,7 @@ footer {
 	.social {
 	    i {
 			font-size: 25px;
-		    padding: 0 25px;
+		    padding: 0 20px;
 			margin: 0 auto;
 		}
 	}
