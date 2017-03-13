@@ -16,7 +16,7 @@
 			            .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
 			            .replace(/\/$/, '');
 			    }
-			    $('a[href*=#]').each(function () {
+			    $('.menu-link a[href*=#]').each(function () {
 			        if (filterPath(location.pathname) == filterPath(this.pathname)
 			                && location.hostname == this.hostname
 			                && this.hash.replace(/#/, '')) {
@@ -39,4 +39,8 @@
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
+});
+
+AOS.init({
+ duration: 1200
 });
