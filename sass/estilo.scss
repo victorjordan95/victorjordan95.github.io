@@ -184,10 +184,12 @@ p, a {font-family: 'Roboto', sans-serif;}
 		border-bottom: 1px solid #FFF;
 		margin-bottom: 0;
 	}
-	h2 {
-		font-size: 1.5em;
-		margin-top: 0;
-	}
+	h2{
+    a {
+      color: #ffffff;
+      margin: 8px 0 0 0;
+    }
+  }
 
 }
 
@@ -269,9 +271,9 @@ p, a {font-family: 'Roboto', sans-serif;}
 
 .section-extra {
 	background-color: $bg-sections;
+	border-bottom: 5px solid $color-one;
 	color: $color-one;
 	text-align: center;
-	margin-bottom: 16px;
 	h2 {
 		padding: 16px 0;
 	}
@@ -309,7 +311,8 @@ p, a {font-family: 'Roboto', sans-serif;}
 
 .section-contact {
 	background-color: $bg-sections;
-	color: $color-hover;
+	border-top: solid 5px $color-one;
+  color: $color-hover;
 	.contact{
 		margin-bottom: 38px;
 		h2 {
