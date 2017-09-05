@@ -1,0 +1,26 @@
+.inputGroup {
+    text-align: left;
+    position: relative;
+    margin-bottom: 26px;
+
+    .inputGroup-label {
+        font-size: 14px;
+        color: #4a4a4a;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 2px;
+        left: 8px;
+        transition: all 0.2s ease;
+        transform-origin: 0% 100%;
+        transform: translateY(-6px);
+    }
+
+    .inputGroup-field {
+        font-family: $font;
+        font-size: 16px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        width: 100%;
+        border-radius: 2px;
+    }
+}

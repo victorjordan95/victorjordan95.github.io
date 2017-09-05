@@ -1,4 +1,4 @@
-app 
-dist
-node_modules
-
+node_modules/
+.gulp/
+.git/
+.history/

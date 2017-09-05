@@ -1,0 +1,27 @@
+// EXEMPLO APENAS
+.btn {
+    @include border-radius(4px);
+    @include transition(all .5s ease);
+    background-color: transparent;
+    border: solid 1px $quero-azul;
+    color: $quero-azul;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+
+    &:hover { 
+        background-color: $quero-azul;
+        color: #fff;
+    }
+}
+
+.btn-close {
+    border: solid 1px transparent;
+    color: $quero-icons;
+    padding: 0;
+    &:hover { 
+        background-color: transparent;
+        color: #fff;
+    }
+}
