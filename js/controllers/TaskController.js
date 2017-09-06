@@ -6,7 +6,7 @@ class TaskController {
 
         this._inputId = $("#activity-id");
         this._inputTitle = $("#activity-title");
-	      this._inputDescription = $("#activity-description");
+	    this._inputDescription = $("#activity-description");
         this._listaTasks = new ListTasks();
         this._taskView = new TasksView($('#tasksView'));
         
@@ -17,12 +17,12 @@ class TaskController {
 
     addDefault(){
         this._listaTasks.adiciona(this._criaTask(
-            1,
+            "1",
             "Work it harder",
             "Some description"
         ));
         this._listaTasks.adiciona(this._criaTask(
-            2,
+            "2",
             "Make it better",
             "Some description"
         ));
@@ -32,23 +32,17 @@ class TaskController {
 
     adiciona(event) {
         event.preventDefault();
-        console.log(this._inputId.value);
-        //new
+        
+        //Verifica se o input está vazio e chama a respectiva função
         if(!this._inputId.value){
-          console.log("new do trein");
           this._inputId.value = this._listaTasks.tasks.length + 1;
           this._listaTasks.adiciona(this._criaTask(this._inputId.value, this._inputTitle.value, this._inputDescription.value));
         //edt
         } else {
-          console.log("edt");
           this._listaTasks.tasks.splice(this._inputId.value - 1, 1, this._criaTask(this._inputId.value, this._inputTitle.value, this._inputDescription.value));
         }
         this._taskView.update(this._listaTasks);
         this._limpaFormulario();
-        
-//
-//        console.log(this._listaTasks.tasks);
-
     };
 
     _criaTask(id, title, desc){

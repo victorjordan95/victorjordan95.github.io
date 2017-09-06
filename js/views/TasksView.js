@@ -14,7 +14,7 @@ class TasksView {
                             <div class="activity-body">
                                 <span class="icon icon-check icon-middle"></span>
                                 <span class="activity-text">${n.title}</span>
-                                <span class="icon icon-circle right icon-middle"></span>
+                                <span class="icon icon-circle is-right icon-middle"></span>
                             </div>
                         </div>
                     </div>
