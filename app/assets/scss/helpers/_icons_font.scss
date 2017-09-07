@@ -32,14 +32,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-conf:before {
-  content: "\e904";
-}
 .icon-close:before {
   content: "\e5cd";
-}
-.icon-favorite:before {
-  content: "\e87e";
 }
 .icon-menu:before {
   content: "\e5d2";
@@ -47,36 +41,42 @@
 .icon-more:before {
   content: "\e5d3";
 }
-.icon-check:before {
-  content: "\e903";
+.icon-favorite:before {
+  content: "\e87e";
 }
 .icon-two-up:before {
   content: "\e900";
 }
-.icon-down:before {
-  content: "\e901";
+.icon-check:before {
+  content: "\e903";
 }
-.icon-up:before {
-  content: "\e902";
+.icon-conf:before {
+  content: "\e904";
 }
 .icon-calendar:before {
   content: "\e953";
 }
-.icon-search:before {
-  content: "\e986";
+.icon-find:before {
+  content: "\e987";
 }
 .icon-attachment:before {
   content: "\e9cd";
-}
-.icon-plus:before {
-  content: "\ea0a";
-}
-.icon-checkmark:before {
-  content: "\ea10";
 }
 .icon-opt:before {
   content: "\ea51";
 }
 .icon-circle:before {
   content: "\ea56";
+}
+.icon-plus:before {
+  content: "\e145";
+}
+.icon-down:before {
+  content: "\e313";
+}
+.icon-right:before {
+  content: "\e315";
+}
+.icon-up:before {
+  content: "\e316";
 }

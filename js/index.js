@@ -10,30 +10,30 @@ function newTask() {
 }
 function openTask() {
 	tasks.add("is-open");
-	taskForm.add("is-show");
+	taskForm.add("is-visible");
 }
 
 function closeTask(){
 	activityDescription.blur();
 	tasks.remove("is-open");
-	taskForm.remove("is-show");
+	taskForm.remove("is-visible");
+	taskController.removeClickedIcon();
 }
 
-activityDescription.addEventListener('blur', function(){
+activityDescription.addEventListener('blur', event => {
 	taskController.adiciona(event);
 });
 
-activityDescription.onkeypress = function (e) {
+activityDescription.onkeypress = e => {
 	if (e.which === 13) {
 		e.preventDefault();
 		activityDescription.blur();
 	}
 };
 
-activityTitle.onkeypress = function (e) {
+activityTitle.onkeypress = e => {
 	if (e.which === 13) {
 		e.preventDefault();
 		activityDescription.focus();
 	}
 };
-

@@ -28,12 +28,12 @@
             </ul>
 
             <div class="header-field">
-                <span class="icon icon-search"></span>
+                <span class="icon icon-find"></span>
                 <input type="text" class="header-search" placeholder="Search">
             </div>
 
 
-            <ul class="navbar-menu right">
+            <ul class="navbar-menu is-right">
                 <li class="menu-item"><a href="#" class="item">Help <svg class="icon icon-down icon-middle"><use xlink:href="#icon-down"></use></svg></a></li>
                 <li class="menu-item"><a href="#" class="item">Personal Projects</a></li>
                 <li class="menu-item">
@@ -85,10 +85,10 @@
                     <button class="btn"><span class="icon icon-attachment"></span></button>
                     <button class="btn"><span class="icon icon-more"></span></button>
                 </div>
-                <button id="close-task" class="right btn btn-close" onclick="closeTask()"><span class="icon icon-close"></span></button>
+                <button id="close-task" class="is-right btn btn-close" onclick="closeTask()"><span class="icon icon-close"></span></button>
             </div>
 
-            <form class="form-activity" >
+            <form class="form-activity">
                 <div class="activity">
                     <span class="icon icon-check"></span>
                     
@@ -100,7 +100,7 @@
             </form>
 
             <div class="comment">
-                <div class="left">
+                <div class="is-left">
                     <img src="assets/img/user-avatar.png" class="avatar" alt="Foto de perfil do usuário" width="30" height="30">
                 </div>
                 <div class="">
@@ -111,15 +111,11 @@
         </section>
     </main>
 
-
-
-
     <script src="js/index.js"></script>
     <script src="js/models/Task.js"></script>
     <script src="js/controllers/TaskController.js"></script>
     <script src="js/models/ListTasks.js"></script>
     <script src="js/views/TasksView.js"></script>
-
     <script>
         var taskController = new TaskController();
     </script>

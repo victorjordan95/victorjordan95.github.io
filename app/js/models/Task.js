@@ -16,8 +16,4 @@ class Task {
     get description(){
         return this._description;
     }
-  
-    get funcao() {
-      console.log('aaaa');
-    }
 }

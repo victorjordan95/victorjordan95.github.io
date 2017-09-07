@@ -54,11 +54,10 @@ class TaskController {
     };
   
     edt(n) {
-        console.log(this._listaTasks.tasks[n]);
-
+        console.log(n);
+        var clickedTask = document.querySelectorAll('.icon-right');
+        clickedTask[n].classList.add('is-visible');
         var task = this._listaTasks.tasks[n];
-        console.log("minha task: " + task);
-        
         this._inputId.value = task.id;
         this._inputTitle.value = task.title;
         this._inputDescription.value = task.description;
@@ -70,7 +69,18 @@ class TaskController {
         this._inputId.value = null;
         this._inputTitle.value = null;
         this._inputDescription.value = null;
+        var clickedTask = document.querySelectorAll('.icon-right');
+        
+        this.removeClickedIcon();
         this._inputTitle.focus();
     };
+
+    removeClickedIcon(){
+        var clickedTask = document.querySelectorAll('.icon-right');
+        
+        for (var i = 0, len = clickedTask.length; i < len; i++) {
+            clickedTask[i].classList.remove('is-visible');
+        }
+    }
 
 };

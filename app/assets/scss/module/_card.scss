@@ -4,7 +4,8 @@
     background-color: #FFF;
     border: 1px solid #ebebeb;
     margin: auto;
-    min-height: calc(100vh - 70px - 50px);
+    min-height: calc(100vh - 120px);
+  
     .card-title {
         font-size: 22px;
         font-weight: normal;
@@ -14,11 +15,13 @@
 
 .full-card {
     max-width: 70%;
-    &.open {
+  
+    &.is-open {
         float: left;
         margin: 0;
         width: 55%;
     }
+  
     .actions {
         @include box-shadow(0px 0px 2px 0px rgba(0, 0, 0, 0.3));
     }
@@ -29,26 +32,38 @@
     float: right;
     width: 43%;
     position: relative;
+  
     .actions {
         border-bottom: solid 1px $border;
+      
         .avatar {
             margin: 0;
         }
+      
         .user-name {
             margin: 0 5px;
         }
+      
         .icon {
             color: $quero-icons;
         }
     }
+  
     .user {
         display: inline;
         margin-left: 15px;
+
+        .icon-circle {
+            color: $quero-icons;
+            font-size: 10px;
+        } 
     }
+  
     .button-options {
         display: inline;
         margin: 5px 15px 0;
         vertical-align: middle;
+      
         .btn {
             border-color: $quero-icons;
             border-radius: 50%;
@@ -58,22 +73,27 @@
             padding: 7px;
             vertical-align: middle;
             width: 30px;
+          
             &:hover {
                 .icon {
                     color: #fff;
                 }
             }
         }
+      
         .btn-calendar {
             border: dashed 2px $quero-icons;
             padding: 6px 7px;
         }
+      
         .calendar-span {
-            margin: 0 15px;
-        }
+            margin: 0 5px;
+        }      
     }
+  
     .form-activity {
         margin: 60px 20px;
+      
         .icon-check {
             cursor: pointer;
             color: $quero-icons;
@@ -82,6 +102,7 @@
             position: absolute;
             z-index: 2;
         }
+      
         .activity-title {
             font-size: 1.5em;
             font-weight: bold;
@@ -89,6 +110,7 @@
             padding: 0 50px;
             width: 100%;
         }
+      
         .activity-description {
             margin: 10px 35px;
             padding: 10px 20px;
@@ -103,6 +125,7 @@
         padding: 10px;
         position: absolute;
         width: 100%;
+      
         .avatar {
             margin: 0 10px 0 20px;
         }
@@ -140,9 +163,11 @@
 .actions {
     height: 70px;
     padding: 15px;
+  
     .btn-task {
         margin-left: 15px;
     }
+  
     .icon-conf {
         color: $quero-icons;
         float: right;
@@ -161,7 +186,7 @@
                 color: $border;
                 font-size: 30px;
             }
-            .icon-circle {
+            .icon-circle, .icon-right {
                 color: $border;
                 display: none;
                 font-size: 15px;
@@ -178,6 +203,10 @@
                 display: initial;
             }
         }
+        &:active {
+            .icon-right{
+                display: initial;
+            }
+        }
     }
 }
-

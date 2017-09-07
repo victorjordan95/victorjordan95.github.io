@@ -1,24 +1,14 @@
 @import "helpers/colors";
 @import "helpers/icons_font";
-//@import "helpers/_queries";
 @import "mixins/mixin";
 @import "base/base";
-@import "helpers/grid";
-//
-//// LAYOUTS
+
+// LAYOUTS
 @import "layout/header";
-//@import "layout/_footer";
-//
-//// MODULES
+
+// MODULES
 @import "module/_card";
 @import "module/_btn";
-//@import "module/_inputGroup";
-//@import "module/_thumbnail";
-//
-//@import "state/_state";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+@import "state/_state";
 

@@ -1,4 +1,4 @@
-$font:  Calibri, Geneva, Tahoma, Arial;
+$font:  Tahoma, Geneva, Arial;
 $color: #20D0C3;
 
 * {
@@ -37,22 +37,6 @@ a {
   width: 1em;
 }
 
-.icon-middle {
-    vertical-align: middle;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.show {
-    display: initial!important;
-}
-
 .avatar {
   @include border-radius(50%);
   border: 1px solid $border;
@@ -60,3 +44,8 @@ a {
   vertical-align: middle;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

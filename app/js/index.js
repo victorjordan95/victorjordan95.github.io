@@ -9,26 +9,31 @@ function newTask() {
   taskController._limpaFormulario();
 }
 function openTask() {
-	console.log("Cliquei");
-	tasks.add("open");
-	taskForm.add("show");
+	tasks.add("is-open");
+	taskForm.add("is-visible");
 }
 
 function closeTask(){
 	activityDescription.blur();
-	tasks.remove("open");
-	taskForm.remove("show");
+	tasks.remove("is-open");
+	taskForm.remove("is-visible");
+	taskController.removeClickedIcon();
 }
 
-activityDescription.addEventListener('blur', function(){
+activityDescription.addEventListener('blur', event => {
 	taskController.adiciona(event);
 });
 
-function enterPress() {
-    activityDescription.onkeypress = function (e) {
-        if (e.which === 13) {
-            e.preventDefault();
-			     activityDescription.blur();
-        }
-    };
-}
+activityDescription.onkeypress = e => {
+	if (e.which === 13) {
+		e.preventDefault();
+		activityDescription.blur();
+	}
+};
+
+activityTitle.onkeypress = e => {
+	if (e.which === 13) {
+		e.preventDefault();
+		activityDescription.focus();
+	}
+};
