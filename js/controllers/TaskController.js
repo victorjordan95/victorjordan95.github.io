@@ -54,7 +54,6 @@ class TaskController {
     };
   
     edt(n) {
-        console.log(n);
         var clickedTask = document.querySelectorAll('.icon-right');
         clickedTask[n].classList.add('is-visible');
         var task = this._listaTasks.tasks[n];
