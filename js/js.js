@@ -23,19 +23,32 @@
 //     }
 // });
 
-var menuClass = document.getElementById("js-open-menu").classList;
-var menu = document.getElementById("js-open-menu");
 
-function openMenu(){
-    if(!menuClass.contains("closed") && !menuClass.contains("active")){
-        menuClass.add('active');
-    } else {
-        if(menuClass.contains("active")){
-            menuClass.remove("active");
-            menuClass.add("closed")
-        } else {
-            menuClass.remove('closed');
-            menuClass.add('active');
-        }
-    }
+// function openMenu(){
+
+//     var menuClass = document.getElementById("js-open-menu").classList;
+//     var menu = document.getElementById("js-open-menu");
+
+//     if(!menuClass.contains("closed") && !menuClass.contains("active")){
+//         menuClass.add('active');
+//     } else {
+//         if(menuClass.contains("active")){
+//             menuClass.remove("active");
+//             menuClass.add("closed")
+//         } else {
+//             menuClass.remove('closed');
+//             menuClass.add('active');
+//         }
+//     }
+// }
+
+function devOpen(){
+    var headerCard = document.getElementById("js-devBody").classList;
+    headerCard.toggle('collapsed');
+    
+}
+
+function designOpen(){
+    var headerCard = document.getElementById('js-designBody').classList;
+    headerCard.toggle('collapsed');
 }
