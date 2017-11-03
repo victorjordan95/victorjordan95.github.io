@@ -42,13 +42,13 @@
 //     }
 // }
 
-function devOpen(){
-    var headerCard = document.getElementById("js-devBody").classList;
-    headerCard.toggle('collapsed');
+// function devOpen(){
+//     var headerCard = document.getElementById("js-devBody").classList;
+//     headerCard.toggle('collapsed');
     
-}
+// }
 
-function designOpen(){
-    var headerCard = document.getElementById('js-designBody').classList;
-    headerCard.toggle('collapsed');
-}
+// function designOpen(){
+//     var headerCard = document.getElementById('js-designBody').classList;
+//     headerCard.toggle('collapsed');
+// }
