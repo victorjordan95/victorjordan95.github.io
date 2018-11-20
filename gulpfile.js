@@ -151,6 +151,10 @@ gulp.task('cleanAll', function () {
         .pipe(clean({force: true}));
 });
 
+gulp.task('clean', function() {
+    return del(['public/**/*']);
+})
+
 // WATCH
 gulp.task('watch', function () {
     gulp.watch(paths.html.input,    ['html']);
