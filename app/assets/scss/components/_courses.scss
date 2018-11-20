@@ -1,0 +1,26 @@
+.courses {
+    @extend .about;
+    h2 {
+        color : $light-green;
+        text-align: left;
+    }
+    .subtitle {
+        color: $subtitle;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: lighter;
+        text-align: left;
+    }
+
+    ul {
+        color: #757575;
+        list-style: disc;
+        padding: 20px;
+        text-align: left;
+
+        li {
+            padding: 2px;
+        }
+    }
+
+}

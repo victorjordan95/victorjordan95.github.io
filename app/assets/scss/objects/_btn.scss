@@ -1,0 +1,21 @@
+.btn {
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px;
+    transition: all .5s ease-in;
+    text-transform: uppercase;
+    width: 100%;
+    &.btn-default {
+        border: 1px solid $light-green;
+        color: $light-green;
+        position: relative;
+        text-decoration: none;
+        top: 18px;
+        &:hover {
+            background-color: $light-green;
+            border: 1px solid $light-green;
+            color: #fff;
+        }
+    }
+}

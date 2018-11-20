@@ -1,0 +1,75 @@
+// estilos para os headings h1-h6, blockquotes, a, buttons, etc
+body {
+    font-family: $font;
+}
+
+main {
+    align-items: center;
+    background-color: #f7f7f7; //#252627;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    min-height: calc(100vh - 50px);
+    position: relative;
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        justify-content: flex-start;
+        max-height: calc(100vh - 60px);
+    }
+    @media screen and (min-width: 1024px) {
+        flex-flow: initial;
+    }
+}
+
+.svg-bg {
+    @media screen and (min-width: 1024px) {
+        background: #e0e0e0;
+        bottom: 0;
+        direction: ltr;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    background: none;
+    border: none;
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        top: 0px;
+        min-height: calc(100vh);
+    }
+}

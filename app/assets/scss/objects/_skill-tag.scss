@@ -1,0 +1,33 @@
+.skill-tag {
+    color: rgba(0, 0, 0, 0.87); //padding: 10px;
+    margin: 10px 0 18px;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+        float: left;
+        margin: 0 2% 0 0;
+        width: 48%;
+    }
+    .header {
+        color : $subtitle;
+        font-style: italic;
+        margin: 16px 0;
+        text-align: left;
+    }
+    .body {
+        .lista {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            text-align: left;
+            .list-item {
+                border: 2px solid $subtitle;
+                background-color: transparent;
+                border-radius: 15px;
+                color: $subtitle;
+                font-size: 12px;
+                margin: 5px;
+                padding: 5px 15px;
+            }
+        }
+    }
+}

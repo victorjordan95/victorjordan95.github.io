@@ -1,0 +1,20 @@
+.alert {
+    box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.51);
+    border-radius: 4px;
+    color : #fff;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 25px 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 200px;
+
+    &.success {
+        background-color: #8bc34a;
+    }
+
+    &.error {
+        background-color: #f44336;
+    }
+}

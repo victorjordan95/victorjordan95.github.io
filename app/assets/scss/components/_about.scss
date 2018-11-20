@@ -1,0 +1,44 @@
+.about {
+    margin-bottom: 90px;
+    padding: 20px 20px 0px 20px;
+    position: relative;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        padding: 0;
+        margin-left: 150px;
+        z-index: 2;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 0;
+        position: relative;
+        text-align: center;
+        width: 60%;
+        z-index: 2;
+    }
+    .title {
+        color: $light-green;
+        font-size: 2em;
+        margin-bottom: 36px;
+        text-align: left;
+    }
+    .description {
+        color: $title-color;
+        font-size: 1em;
+        font-weight: lighter;
+        margin: 18px 0;
+        text-align: left;
+    }
+    .link {
+        color: $light-green;
+        text-decoration: underline;
+    }
+    .btn {
+        float: left;
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 25%;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.contact {
+  @extend .about;
+  @media screen and (min-width: 768px) {
+    width: 70%;
+  }
+  .flex-row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      flex-flow: row wrap;
+    }
+    .social {
+      .title {
+        margin-top: 50px;
+        @media screen and (min-width: 768px) {
+          margin: 0;
+        }
+      }
+      .social-icon {
+        color: #757575;
+        display: flex;
+        flex-flow: row wrap;
+        font-style: italic;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .contact-form {
+    @media screen and (min-width: 768px) {
+      width: 45%;
+    }
+  }
+  label {
+    display: block;
+    text-align: left;
+  }
+  input,
+  textarea {
+    background-color: #fff;
+    border: 1px solid $light-green;
+    border-radius: 4px;
+    display: block;
+    padding: 5px;
+    width: 100%;
+    margin: 5px 0 20px;
+  }
+  label {
+    color : #424242;
+  }
+  input {
+    height: 40px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .icon {
+    cursor: pointer; //display: block;
+    fill: $subtitle;
+    height: 30px;
+    margin-right: 20px;
+    transition: fill 0.8s ease;
+    vertical-align: middle;
+    width: 30px;
+    @media screen and (min-width: 768px) {
+    }
+    &:hover {
+      fill: darken( $subtitle, 5%)
+    }
+  }
+  .icon-social-skype-outline {
+    cursor: default;
+  }
+}

@@ -1,0 +1,27 @@
+.skills {
+    @extend .about;
+
+    h1 {
+        color: $light-green;
+        text-align: left;
+        @media screen and (min-width: 768px) {
+            margin: 20px 0;
+        }
+    }
+    .title {
+        margin: 40px 0 10px;
+        font-size: 1.6em;
+        @media screen and (min-width: 768px) {
+            margin: 40px 0 0;
+        }
+    }
+    .description {
+        color: $text-color;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    .link {
+        color: $light-green;
+        text-decoration: underline;
+    }
+}

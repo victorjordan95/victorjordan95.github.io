@@ -1,0 +1,30 @@
+.intro {
+    padding: 0 20px 0px 20px;
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+        margin-left: 90px;
+        padding: 0;
+        text-align: left;
+    }
+    @media screen and (min-width: 1024px) {
+        margin-left: 150px;
+    }
+    .name {
+        color: $light-green;
+        font-size: 2em;
+        @media screen and (min-width: 768px) {
+            font-size: 2em;
+        }
+    }
+    .role {
+        color: $title-color;
+        font-size: 1em;
+        font-weight: lighter;
+        margin: 18px 0 25px;
+        @media screen and (min-width: 768px) {
+            font-size: 1em;
+            font-weight: lighter;
+            margin: 18px 0 50px;
+        }
+    }
+}
