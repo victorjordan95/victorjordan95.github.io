@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build && cd build && npm run deploy",
-    "deploy": "git remote set-url origin https://github.com/victorjordan95/victorjordan95.github.io.git && git add . && git commit -m 'newVersion' && git push"
+    "deploy": "git remote set-url origin https://github.com/victorjordan95/victorjordan95.github.io.git && git add . && git commit -m 'newVersion' && git push origin master"
   },
   "author": "",
   "license": "ISC",
