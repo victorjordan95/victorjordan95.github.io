@@ -1,4 +1,5 @@
 node_modules/
+build/
 .gulp/
 .git/
 .history/

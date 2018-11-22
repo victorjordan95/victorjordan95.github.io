@@ -1,10 +1,3 @@
-// TO DO
-// SASS - DOC https://www.sitepoint.com/simple-gulpy-workflow-sass/
-// npm install sassdoc --save-dev
-
-// mandar exemplo cm browser-sync
-
-
 var gulp         = require('gulp'),
     connect      = require('gulp-connect'),
     // SASS
@@ -16,28 +9,22 @@ var gulp         = require('gulp'),
     concat       = require('gulp-concat'),
     jshint       = require('gulp-jshint'),
     stylish      = require('jshint-stylish'),
-    useref       = require('gulp-useref'),
-    gulpIf 	 = require('gulp-if'),
-    pump         = require('pump'),
     // GENERAL
     htmlmin      = require('gulp-htmlmin'),
     imagemin     = require('gulp-imagemin'),
     gulpSequence = require('gulp-sequence'),
-    clean        = require('gulp-clean');
-    cleanCSS = require('gulp-clean-css');
+    clean        = require('gulp-clean'),
+    concat       = require('gulp-concat');
 
 // PATHS SRC
 var paths = {
     html: {
-        input:      'app/**/*.html'
+        input:      'app/**/*.html',
+        output:      'build/'
     },
     sass: {
         input:      'app/assets/scss/**/*.scss',
         output:     'build/assets/css'
-    },
-    css : {
-    	input :	    'build/assets/css/**/*.css',
-	output:     'build/assets/css'
     },
     cleanJs: {
         output:     'build/js/min/all.min.js',
@@ -47,7 +34,7 @@ var paths = {
         output:     'build/js/',
     },
 	font: {
-	input:      'app/assets/fonts/*.*',
+        input:      'app/assets/fonts/*.*',
         output:     'build/assets/fonts/',
 	},
     jsLibs: {
@@ -89,18 +76,9 @@ gulp.task('sass', function() {
         }).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(autoprefixer())
-        .pipe(gulp.dest(paths.sass.output));
+        .pipe(gulp.dest(paths.sass.output))
+		.pipe(gulp.dest('build/assets/css'));
 });
-
-//CSS
-gulp.task('minify-css', () => {
-  return gulp.src(paths.css.input)
-    .pipe(sourcemaps.init())
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.css.output));
-});
-
 
 // IMAGE
 gulp.task('imagemin', function (){
@@ -122,22 +100,21 @@ gulp.task('libs', function() {
         .pipe(gulp.dest(paths.jsLibs.output));
 });
 
-//MINIFY AND CONCAT JS
-gulp.task('js', function(cb) {
-    pump([
-	gulp.src([paths.js.input]),
-        uglify(),
-        gulp.dest(paths.js.output)
-    ],
-    	cb
-    );
+//COPY JS
+gulp.task('js', function() {
+    return gulp.src([paths.js.input])
+        .pipe(gulp.dest(paths.js.output));
 });
 
-gulp.task('scripts', function() {
-  return gulp.src(paths.js.input)
-    .pipe(concat('all.min.js'))
-    .pipe(gulp.dest(paths.js.output));
+// Concat JS
+gulp.task('scripts', function () {
+    return gulp.src(paths.js.input)
+        .pipe(concat('all.min.js'))
+        .pipe(gulp.dest(paths.js.output))
+        .pipe(uglify())
+        .pipe(gulp.dest(paths.js.output));;
 });
+
 
 // LIVERELOAD
 gulp.task('livereload', function (){
@@ -146,14 +123,10 @@ gulp.task('livereload', function (){
 });
 
 // CLEAN ALL
-gulp.task('cleanAll', function () {
-    return gulp.src(paths.outputGeneral)
-        .pipe(clean({force: true}));
-});
-
-gulp.task('clean', function() {
-    return del(['public/**/*']);
-})
+// gulp.task('cleanAll', function () {
+//     return gulp.src(paths.outputGeneral)
+//         .pipe(clean({force: true}));
+// });
 
 // WATCH
 gulp.task('watch', function () {
@@ -163,4 +136,5 @@ gulp.task('watch', function () {
     gulp.watch(paths.livereload.input, ['livereload']);
 });
 
-gulp.task("default", gulpSequence('cleanAll', 'connect', ['sass', 'minify-css'], 'html','libs','watch',['js','scripts'], 'fonts', 'imagemin'));
+gulp.task("default", gulpSequence('connect', 'sass', 'html','libs','watch','scripts', 'fonts', 'imagemin'));
+gulp.task("build", gulpSequence('sass','html','libs','scripts', 'fonts', 'imagemin')); 
