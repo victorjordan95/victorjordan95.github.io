@@ -11,8 +11,5 @@ before_script:
 - git config --global user.name "Victor Jordan"
 - git config --global user.email "victorjordan95@gmail.com"
 - npm install -g gulp
-- gulp build
-- cd build
-- git remote set-url origin https://github.com/victorjordan95/victorjordan95.github.io.git
 
 script: npm run build
