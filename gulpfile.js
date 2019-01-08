@@ -137,4 +137,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task("default", gulpSequence('connect', 'sass', 'html','libs','watch','scripts', 'fonts', 'imagemin'));
-gulp.task("build", gulpSequence(['clean'], 'sass','html','libs','scripts', 'fonts', 'imagemin')); 
+gulp.task("build", gulpSequence('sass','html','libs','scripts', 'fonts', 'imagemin')); 
