@@ -123,10 +123,10 @@ gulp.task('livereload', function (){
 });
 
 // CLEAN ALL
-// gulp.task('cleanAll', function () {
-//     return gulp.src(paths.outputGeneral)
-//         .pipe(clean({force: true}));
-// });
+gulp.task('cleanAll', function () {
+    return gulp.src(paths.outputGeneral)
+        .pipe(clean({force: true}));
+});
 
 // WATCH
 gulp.task('watch', function () {
@@ -137,4 +137,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task("default", gulpSequence('connect', 'sass', 'html','libs','watch','scripts', 'fonts', 'imagemin'));
-gulp.task("build", gulpSequence('sass','html','libs','scripts', 'fonts', 'imagemin')); 
+gulp.task("build", gulpSequence(['clean'], 'sass','html','libs','scripts', 'fonts', 'imagemin')); 

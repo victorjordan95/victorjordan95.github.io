@@ -7,7 +7,7 @@
     "develop": "git add . && git commit -m 'new' && git push origin develop",
     "test": "cd build && git status && ls -la && npm run deploy",
     "build": "npm run test",
-    "deploy": "git remote set-url origin https://github.com/victorjordan95/victorjordan95.github.io.git && git add . && git commit -m 'newVersion' && git push origin master"
+    "deploy": "git init && git add . && git commit -m 'newVersion' &&  git remote set-url origin https://github.com/victorjordan95/victorjordan95.github.io.git && git push origin master"
   },
   "author": "",
   "license": "ISC",
