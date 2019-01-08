@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "git add . && git commit -m 'new' && git push origin develop",
     "test": "git status && ls -la",
-    "build": "gulp build && cd ./build && npm run test",
+    "build": "npm run test",
     "deploy": "git remote set-url origin https://github.com/victorjordan95/victorjordan95.github.io.git && git add . && git commit -m 'newVersion' && git push origin master"
   },
   "author": "",

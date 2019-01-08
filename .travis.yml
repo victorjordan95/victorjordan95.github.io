@@ -11,5 +11,6 @@ before_script:
 - git config --global user.name "Victor Jordan"
 - git config --global user.email "victorjordan95@gmail.com"
 - npm install -g gulp
-
+- gulp build
+- cd ./build
 script: npm run build
