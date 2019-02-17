@@ -10,6 +10,7 @@
     margin: 0;
     padding: 36px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .header-subtitle {
@@ -19,4 +20,5 @@
     margin: 0;
     padding: 18px;
     text-align: center;
+    text-transform: uppercase;
 }

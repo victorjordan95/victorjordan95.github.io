@@ -1,48 +1,16 @@
-.section {
-    padding: 24px 24px 0;
-}
-
-.section-header {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.section-header .icon {
-    background-color: #2c3d50;
-    border-radius: 50%;
-    fill: #fff;
-    margin: 0 0 0 24px;
-    padding: 6px;
-}
-
-.section-title {
-    margin: 0 0 0 8px ;
-}
-
-.section-body {
-    margin: 0;
-    padding: 16px 60px;
-}
-
-.section-body p {
-    margin: 0;
-}
-
 
 /* Skills bar */
 .wrapper{
     margin:0 auto;
 }
 .skill {
-    margin-bottom: 35px;
+    margin-bottom: 8px;
     position: relative;
     overflow-x:hidden;
         
 }
 .skill > p {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 1em;
     color: #424242;
     margin: 0;
 }
@@ -73,48 +41,24 @@
     font-weight: 500;
 }
 
-.skill1 .skill-count1 {
-    right: 0;
-}
-/* SKILL 2 */
-.skill2{
-    width: 85%;
+/* Contact Info */
+
+.contact-info {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 16px 0;
 }
 
-.skill2 .skill-count2 {
-    right: 0;
-}
-/* SKILL 3 */
-.skill3{
-    width: 75%;
-}
-.skill3 .skill-count3 {
-    right: 0;
+.contact-info .icon {
+    fill: #2c3d50;
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+
 }
 
-/* SKILL 4 */
-.skill4{
-    width: 65%
-}
-
-.skill4 .skill-count4 {
-    right: 0;
-}
-
-/* SKILL 5 */
-.skill5{
-    width: 80%;
-}
-
-.skill5 .skill-count5 {
-    right: 0;
-}
-
-/* SKILL 6 */
-.skill6{
-    width: 90%
-}
-
-.skill6 .skill-count6 {
-    right: 0;
+.contact-info span {
+    margin-left: 18px;
 }

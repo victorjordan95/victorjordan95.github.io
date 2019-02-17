@@ -1,0 +1,46 @@
+.experience-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.experience-separator {
+    border-left: 1px solid #c9c9c9;
+    height: auto;
+    width: auto;
+}
+
+.experience-separator span {
+    background-color: #fefefe;
+    margin-left: -6px;
+    padding: 0 0 4px 0;
+}
+
+
+.experience-period {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 24px;
+    width: 25%;
+}
+
+.experience-description {
+    margin: 0 0 16px 0;
+    width: 70%;
+}
+
+.experience-description-title h3 {
+    color: #949494;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.experience-description-title h4 {
+    color: #2c3d50;
+    margin: 4px 0 16px;
+}
+
+.experience-description-body p{
+    margin: 8px 0 16px;
+}
+
